@@ -1,3 +1,12 @@
 [submodule "output"]
 	path = output
 	url = https://github.com/stephprince/stephprince.github.io.git
+[submodule "plugins/ipynb"]
+	path = plugins/ipynb
+	url = git://github.com/danielfrg/pelican-ipynb.git
+[submodule "plugins/pelican-plugins"]
+	path = plugins/pelican-plugins
+	url = git://github.com/getpelican/pelican-plugins.git
+[submodule "themes/medius"]
+	path = themes/medius
+	url = https://github.com/onur/medius.git
