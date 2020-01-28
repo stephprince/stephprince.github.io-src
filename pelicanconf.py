@@ -19,11 +19,6 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),)
-
 # Social widget
 SOCIAL = (
     ('github', 'https://github.com/stephprince/'),
@@ -34,18 +29,21 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-# Define the theme
-THEME = "/users/stephanieprince/Dropbox/steph-does-science/themes/medius"
+# tell pelican-bootstrap3 theme where to find our header and avatar and social links
+STATIC_PATHS = ['images']
+BANNER = "images/bluegreybackground.png"
 
-# Define the authors
-MEDIUS_AUTHORS = {
-    'Steph Prince': {
-        'description': """
-            neuroscience PhD student
-        """,
-        #'cover': '/images/bluegreybackground.jpg',
-        #'image': '/images/steph.jpg',
-        'links': (('github', 'https://github.com/stephprince'),
-                  ('twitter-square', 'https://twitter.com/stephmprince')),
-    }
+SOCIAL = (('twitter', 'http://twitter.com/stephmprince'),
+          ('linkedin', 'http://www.linkedin.com/in/stephprince'),
+          ('github', 'http://github.com/stephprince'))
+
+# below because pelican-bootstrap3 theme expects i18n plugin
+PLUGIN_PATHS = ['./plugins/pelican-plugins', ]
+PLUGINS = ['i18n_subsites', ]
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
 }
+
+# for using bootswatch themes, as explained in theme README
+THEME = './themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'yeti'
