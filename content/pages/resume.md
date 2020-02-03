@@ -7,4 +7,4 @@ Summary: Resume and CV
 
 
 
-Please contact me at stephanie [dot] m [dot] prince1 at gmail.com to request a copy of my resume.
+Please contact me at stephanie [dot] m [dot] prince1 [at] gmail.com to request a copy of my resume.
