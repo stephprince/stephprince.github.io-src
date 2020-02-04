@@ -1,6 +1,7 @@
 Title: Allow me to introduce myself
 Date: 2020-01-28 12:00
-Tags: Article
+Category: Articles
+Tags: intro
 Slug: article-200128-intro-to-my-website
 Authors: Steph Prince
 Summary: Introduction to the goals and vision for my website
